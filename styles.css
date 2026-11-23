@@ -1,4 +1,4 @@
-/* VARIABLES GLOBALES Y PALETA */
+
 :root {
     --color-fondo: #F3E8D2;
     --color-superficie: #E8D8BD;
@@ -22,7 +22,6 @@
     --transicion: 0.2s ease;
 }
 
-/* ESTILOS GENERALES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -71,7 +70,7 @@ select {
     margin-inline: auto;
 }
 
-/* HEADER */
+
 .header {
     background-color: var(--color-fondo);
     border-bottom: 1px solid var(--color-arena);
@@ -86,7 +85,7 @@ select {
     padding-block: 20px;
 }
 
-/* IDENTIDAD DE LA CAFETERÍA */
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -109,7 +108,7 @@ select {
     text-transform: uppercase;
 }
 
-/* NAVEGACIÓN */
+
 .navegacion {
     display: flex;
     align-items: center;
@@ -132,7 +131,7 @@ select {
     border-bottom-color: var(--color-dorado);
 }
 
-/* BOTÓN REUTILIZABLE */
+
 .boton {
     display: inline-flex;
     align-items: center;
@@ -155,14 +154,13 @@ select {
     border-color: var(--color-marron);
 }
 
-/* FOCO VISIBLE PARA NAVEGAR CON TECLADO */
 a:focus-visible,
 button:focus-visible {
     outline: 3px solid var(--color-verde);
     outline-offset: 4px;
 }
 
-/* TABLET */
+
 @media (max-width: 900px) {
     .header__contenido {
         flex-direction: column;
@@ -175,7 +173,7 @@ button:focus-visible {
     }
 }
 
-/* MÓVIL */
+
 @media (max-width: 480px) {
     .contenedor {
         width: calc(100% - 32px);
