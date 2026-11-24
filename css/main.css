@@ -1,0 +1,6 @@
+/* Bloque del contenido principal. Crece para situar el footer al final
+   de la ventana cuando hay poco contenido, sin fijarlo sobre la página. */
+.main {
+    flex: 1;
+    width: 100%;
+}
