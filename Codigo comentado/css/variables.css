@@ -1,23 +1,51 @@
-
+/* :root permite declarar variables globales para toda la página */
 :root {
+
+    /* Color beige del fondo principal */
     --color-fondo: #F3E8D2;
+
+    /* Color de fondo para superficies o secciones */
     --color-superficie: #E8D8BD;
+
+    /* Color arena para los bordes */
     --color-arena: #CBB795;
+
+    /* Color verde principal de la cafetería */
     --color-verde: #304638;
+
+    /* Color marrón utilizado en los textos */
     --color-marron: #4B2413;
+
+    /* Color dorado utilizado en detalles decorativos */
     --color-dorado: #A68145;
+
+    /* Color blanco */
     --color-blanco: #FFFFFF;
 
+    /* Tipografía utilizada en los títulos */
     --fuente-titulos: Georgia, "Times New Roman", serif;
+
+    /* Tipografía utilizada en los textos generales */
     --fuente-textos: Arial, Helvetica, sans-serif;
 
+    /* Ancho máximo del contenedor */
     --ancho-contenedor: 1280px;
+
+    /* Redondeado de las esquinas de los botones */
     --radio-boton: 6px;
+
+    /* Redondeado de las esquinas de las tarjetas */
     --radio-tarjeta: 16px;
 
+    /* Espacio pequeño de 8 píxeles */
     --espacio-pequeno: 8px;
+
+    /* Espacio mediano de 16 píxeles */
     --espacio-medio: 16px;
+
+    /* Espacio grande de 32 píxeles */
     --espacio-grande: 32px;
 
+    /* Duración y suavidad de las animaciones */
     --transicion: 0.2s ease;
 }
