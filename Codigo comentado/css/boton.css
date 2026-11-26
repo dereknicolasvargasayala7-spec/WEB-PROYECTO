@@ -1,0 +1,66 @@
+/* Bloque BEM correspondiente al botón */
+.boton {
+
+    /* Activa Flexbox sin ocupar todo el ancho disponible */
+    display: inline-flex;
+
+    /* Centra verticalmente el contenido del botón */
+    align-items: center;
+
+    /* Centra horizontalmente el contenido del botón */
+    justify-content: center;
+
+    /* Establece una altura mínima de 44 píxeles */
+    min-height: 44px;
+
+    /* Espacio interno: 10 píxeles verticales y 28 horizontales */
+    padding: 10px 28px;
+
+    /* Agrega un borde verde de un píxel */
+    border: 1px solid var(--color-verde);
+
+    /* Redondea las esquinas del botón */
+    border-radius: var(--radio-boton);
+
+    /* Aplica el color verde al fondo */
+    background-color: var(--color-verde);
+
+    /* Aplica el color blanco al texto */
+    color: var(--color-blanco);
+
+    /* Establece el tamaño de letra en 14 píxeles */
+    font-size: 14px;
+
+    /* Cambia el cursor a una mano al pasar sobre el botón */
+    cursor: pointer;
+
+    /* Permite realizar cambios de manera suave */
+    transition:
+
+        /* Transición suave del color de fondo */
+        background-color var(--transicion),
+
+        /* Transición suave del color del borde */
+        border-color var(--transicion);
+}
+
+/* Aplica estilos cuando el cursor pasa sobre el botón */
+.boton:hover {
+
+    /* Cambia el fondo del botón a marrón */
+    background-color: var(--color-marron);
+
+    /* Cambia el borde del botón a marrón */
+    border-color: var(--color-marron);
+}
+
+/* Aplica estos estilos en pantallas de hasta 480 píxeles */
+@media (max-width: 480px) {
+
+    /* Modifica el tamaño del botón */
+    .boton {
+
+        /* Reduce el espacio interno izquierdo y derecho */
+        padding-inline: 20px;
+    }
+}

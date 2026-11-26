@@ -1,0 +1,9 @@
+/* Bloque BEM correspondiente al contenido principal */
+.main {
+
+    /* Ocupa el espacio sobrante entre el header y el footer */
+    flex: 1;
+
+    /* Ocupa el 100% del ancho disponible */
+    width: 100%;
+}

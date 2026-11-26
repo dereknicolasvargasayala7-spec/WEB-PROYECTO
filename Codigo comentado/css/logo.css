@@ -1,0 +1,26 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+}
+
+.logo__nombre {
+    color: var(--color-verde);
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.logo__descripcion {
+    margin-top: 4px;
+    color: var(--color-marron);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .logo { text-align: center; }
+    .logo__nombre { font-size: 22px; }
+}
