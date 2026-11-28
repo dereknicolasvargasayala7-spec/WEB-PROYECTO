@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Contacto | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+    <script src="js/contacto.js" defer></script>
+    <script src="js/ubicacion.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+        <div class="contenedor header__contenido">
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
+            </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="menu.html">Menú</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="contacto.html" aria-current="page">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html">Visítanos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor seccion">
+        <div class="seccion__cabecera">
+            <h1 class="seccion__titulo">Hablemos</h1>
+            <p class="seccion__subtitulo">¿Tienes alguna pregunta o una idea para compartir? Nos encantará leerte.</p>
+        </div>
+            <div class="contacto">
+                <form class="formulario" id="formulario-contacto" aria-describedby="nota-formulario">
+                    <h2 class="formulario__titulo">Envíanos un mensaje</h2>
+                    <p class="formulario__nota" id="nota-formulario">Demostración: el mensaje se guarda solo en este navegador. No se envía por correo. Usa datos de prueba.</p>
+                    <div class="formulario__campo">
+                        <label class="formulario__etiqueta" for="nombre">Nombre</label>
+                        <input class="formulario__entrada" id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="error-nombre">
+                        <p class="formulario__error" id="error-nombre"></p>
+                    </div>
+                    <div class="formulario__campo">
+                        <label class="formulario__etiqueta" for="correo">Correo electrónico</label>
+                        <input class="formulario__entrada" id="correo" name="correo" type="email" placeholder="nombre@correo.com" autocomplete="email" required maxlength="120" aria-describedby="error-correo">
+                        <p class="formulario__error" id="error-correo"></p>
+                    </div>
+                    <div class="formulario__campo">
+                        <label class="formulario__etiqueta" for="mensaje">Mensaje</label>
+                        <textarea class="formulario__entrada formulario__entrada--mensaje" id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte…" required minlength="10" maxlength="1000" aria-describedby="error-mensaje"></textarea>
+                        <p class="formulario__error" id="error-mensaje"></p>
+                    </div>
+                    <div class="formulario__acciones">
+                        <button class="boton" id="guardar-mensaje" type="submit" hidden>Guardar mensaje de prueba</button>
+                        <button class="boton boton--secundario" id="borrar-mensaje" type="button" hidden>Borrar datos guardados</button>
+                    </div>
+                    <p class="formulario__estado" id="estado-formulario" role="status"></p>
+                    <noscript>Activa JavaScript para validar y guardar un mensaje de prueba.</noscript>
+                </form>
+                <aside class="contacto__datos" aria-labelledby="titulo-contactos">
+                    <h2 class="contacto__titulo" id="titulo-contactos">También puedes encontrarnos:</h2>
+                    <p class="contacto__etiqueta">WhatsApp</p>
+                    <p class="contacto__valor" id="telefono-pendiente">Número por confirmar</p>
+                    <a class="contacto__enlace" id="enlace-whatsapp" target="_blank" rel="noopener noreferrer" hidden></a>
+                    <p class="contacto__etiqueta">Correo electrónico</p>
+                    <p class="contacto__valor" id="correo-pendiente">Correo por confirmar</p>
+                    <a class="contacto__enlace" id="enlace-correo" hidden></a>
+                    <p class="contacto__etiqueta">Síguenos</p>
+                    <p class="contacto__valor" id="redes-pendientes">Instagram y Facebook: por confirmar</p>
+                    <a class="contacto__enlace" id="enlace-instagram" target="_blank" rel="noopener noreferrer" hidden>Instagram</a>
+                    <a class="contacto__enlace" id="enlace-facebook" target="_blank" rel="noopener noreferrer" hidden>Facebook</a>
+                    <div class="contacto__boton">
+                        <p>¿Prefieres conversar con un café?</p>
+                        <a class="boton" href="visitanos.html">Cómo llegar</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
+        </div>
+    </footer>
+</body>
+</html>

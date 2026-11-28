@@ -1,30 +1,42 @@
 .navegacion {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: var(--espacio-grande);
+    gap: 32px;
 }
-
 .navegacion__enlace {
-    padding-block: 8px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     border-bottom: 2px solid transparent;
     font-size: 14px;
-    transition:
-        color var(--transicion),
-        border-color var(--transicion);
+    transition: border-color var(--transicion);
 }
-
-.navegacion__enlace:hover,
-.navegacion__enlace--activo {
-    color: var(--color-verde);
+.navegacion__enlace:hover, .navegacion__enlace--activo {
     border-bottom-color: var(--color-dorado);
 }
-
-@media (max-width: 900px) {
-    .navegacion { justify-content: center; gap: 24px; }
+.navegacion__visita {
+    margin-left: 48px;
 }
-
-@media (max-width: 480px) {
-    .navegacion { gap: 12px 18px; }
-    .navegacion__enlace { font-size: 13px; }
+@media (max-width: 1050px) {
+    .navegacion {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px 28px;
+    }
+    .navegacion__visita {
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .navegacion {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--color-arena);
+    }
+    .navegacion__enlace {
+        justify-content: center;
+    }
 }

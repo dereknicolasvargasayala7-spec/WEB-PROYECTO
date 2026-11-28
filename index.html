@@ -3,83 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>El Refugio del Reino | Cafetería</title>
-
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="logo.css">
-    <link rel="stylesheet" href="navegacion.css">
-    <link rel="stylesheet" href="boton.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Inicio | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
 </head>
-
 <body>
-
-
+    <a class="salto" href="#contenido">Saltar al contenido</a>
     <header class="header">
         <div class="contenedor header__contenido">
-
-            
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="El Refugio del Reino, inicio"
-            >
-                <span class="logo__nombre">
-                    El Refugio del Reino
-                </span>
-
-                <span class="logo__descripcion">
-                    Café y repostería
-                </span>
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
             </a>
-
-            
-            <nav class="navegacion" aria-label="Navegación principal">
-                <a
-                    href="index.html"
-                    class="navegacion__enlace navegacion__enlace--activo"
-                    aria-current="page"
-                >
-                    Inicio
-                </a>
-
-                <a href="menu.html" class="navegacion__enlace">
-                    Menú
-                </a>
-
-                <a href="nosotros.html" class="navegacion__enlace">
-                    Nosotros
-                </a>
-
-                <a href="contacto.html" class="navegacion__enlace">
-                    Contacto
-                </a>
-
-                <a href="visitanos.html" class="boton">
-                    Visítanos
-                </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace navegacion__enlace--activo" href="index.html" aria-current="page">Inicio</a>
+                <a class="navegacion__enlace" href="menu.html">Menú</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html">Visítanos</a>
             </nav>
-
         </div>
     </header>
-
-
-    <main id="contenido" class="main">
-        
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor">
+            <section class="portada" aria-labelledby="titulo-inicio">
+                <div class="portada__contenido">
+                    <h1 class="portada__titulo" id="titulo-inicio">Tu refugio<br>entre café<br>y leyendas</h1>
+                    <p class="portada__texto">Café recién hecho, repostería artesanal y un rincón para quedarte.</p>
+                    <a class="boton portada__boton" href="menu.html">Ver menú</a>
+                </div>
+                <img class="portada__imagen" src="img/portada.jpg" alt="Cappuccino y croissant en una mesa de nuestra posada" width="1400" height="933" fetchpriority="high">
+            </section>
+            <section class="seccion" aria-labelledby="titulo-favoritos">
+                <h2 class="seccion__adorno" id="titulo-favoritos">Nuestros Favoritos</h2>
+                <div class="seccion__rejilla">
+                <article class="tarjeta tarjeta--compacta" data-producto="cappuccino" data-nombre="Cappuccino" data-precio="18">
+                    <img class="tarjeta__imagen" src="img/cappuccino.jpg" alt="Cappuccino servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h3 class="tarjeta__titulo">Cappuccino</h3>
+                            <span class="tarjeta__precio">Bs 18</span>
+                        </div>
+                        <a class="tarjeta__enlace" href="bebidas-calientes.html">Ver categoría →</a>
+                    </div>
+                </article>
+                <article class="tarjeta tarjeta--compacta" data-producto="latte" data-nombre="Latte" data-precio="20">
+                    <img class="tarjeta__imagen" src="img/latte.jpg" alt="Latte servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h3 class="tarjeta__titulo">Latte</h3>
+                            <span class="tarjeta__precio">Bs 20</span>
+                        </div>
+                        <a class="tarjeta__enlace" href="bebidas-calientes.html">Ver categoría →</a>
+                    </div>
+                </article>
+                <article class="tarjeta tarjeta--compacta" data-producto="croissant" data-nombre="Croissant" data-precio="12">
+                    <img class="tarjeta__imagen" src="img/croissant.jpg" alt="Croissant servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h3 class="tarjeta__titulo">Croissant</h3>
+                            <span class="tarjeta__precio">Bs 12</span>
+                        </div>
+                        <a class="tarjeta__enlace" href="dulces.html">Ver categoría →</a>
+                    </div>
+                </article>
+                </div>
+            </section>
+            <section class="historia" aria-labelledby="titulo-refugio">
+                <img class="historia__imagen" src="img/interior.jpg" alt="Mesas de madera y plantas en una cafetería de inspiración medieval" width="1400" height="933" loading="lazy">
+                <div class="historia__contenido">
+                    <h2 class="historia__titulo" id="titulo-refugio">Un refugio<br>para quedarte</h2>
+                    <p class="historia__texto">Entre aromas de café y nuevas historias, siempre hay un lugar para ti.</p>
+                    <a class="historia__enlace" href="nosotros.html">Conoce nuestra historia →</a>
+                </div>
+            </section>
+        </div>
     </main>
-
-    
     <footer class="footer">
         <div class="contenedor footer__contenido">
-            <p class="footer__texto">
-                El Refugio del Reino · Café y repostería
-            </p>
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
         </div>
     </footer>
-
 </body>
 </html>

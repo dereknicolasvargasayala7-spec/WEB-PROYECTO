@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Nosotros | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+        <div class="contenedor header__contenido">
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
+            </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="menu.html">Menú</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html" aria-current="page">Nosotros</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html">Visítanos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor seccion">
+        <div class="seccion__cabecera">
+            <h1 class="seccion__titulo">Nuestra historia</h1>
+            <p class="seccion__subtitulo">Un refugio donde el café, las historias y la buena compañía se encuentran</p>
+        </div>
+            <section class="historia historia--pagina" aria-labelledby="titulo-historia">
+                <img class="historia__imagen" src="img/interior.jpg" alt="Interior acogedor con mesas de madera y arcos de piedra" width="1400" height="933">
+                <div class="historia__contenido">
+                    <h2 class="historia__titulo" id="titulo-historia">Un refugio con alma de café</h2>
+                    <p class="historia__texto">El Refugio del Reino nace de una idea sencilla: crear un lugar donde cada pausa se disfrute con calma.</p>
+                    <p class="historia__texto">Entre aromas de café, repostería artesanal y detalles inspirados en antiguas posadas, queremos que encuentres un rincón para conversar, compartir y sentirte en casa.</p>
+                </div>
+            </section>
+            <section class="seccion seccion--espaciada" aria-labelledby="titulo-valores">
+                <h2 class="seccion__adorno" id="titulo-valores">Lo que nos hace especiales</h2>
+                <div class="seccion__rejilla">
+                    <article class="tarjeta">
+                        <div class="tarjeta__contenido">
+                            <h3 class="tarjeta__titulo">Café con dedicación</h3>
+                            <p class="tarjeta__descripcion">Preparamos cada taza con cuidado para que disfrutes su aroma y sabor en cada sorbo.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="tarjeta__contenido">
+                            <h3 class="tarjeta__titulo">Sabor artesanal</h3>
+                            <p class="tarjeta__descripcion">Acompañamos tu café con repostería y bocados salados elaborados con cariño.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="tarjeta__contenido">
+                            <h3 class="tarjeta__titulo">Un lugar para compartir</h3>
+                            <p class="tarjeta__descripcion">Un ambiente acogedor, inspirado en antiguas posadas, para conversar y crear nuevas historias.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="seccion__cta">
+                <p class="seccion__invitacion">Tu próxima historia empieza con un café.</p>
+                <a class="boton" href="visitanos.html">Visítanos</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -6,20 +6,22 @@
     padding: 10px 28px;
     border: 1px solid var(--color-verde);
     border-radius: var(--radio-boton);
-    background-color: var(--color-verde);
-    color: var(--color-blanco);
+    background: var(--color-verde);
+    color: var(--color-fondo);
     font-size: 14px;
+    text-align: center;
     cursor: pointer;
-    transition:
-        background-color var(--transicion),
-        border-color var(--transicion);
+    transition: background-color var(--transicion), color var(--transicion);
 }
-
 .boton:hover {
-    background-color: var(--color-marron);
+    background: var(--color-marron);
     border-color: var(--color-marron);
 }
-
-@media (max-width: 480px) {
-    .boton { padding-inline: 20px; }
+.boton--secundario {
+    background: transparent;
+    color: var(--color-verde);
+}
+.boton--secundario:hover {
+    background: var(--color-verde);
+    color: var(--color-fondo);
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Visítanos | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+    <script src="js/ubicacion.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+        <div class="contenedor header__contenido">
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
+            </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="menu.html">Menú</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html" aria-current="page">Visítanos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor seccion">
+        <div class="seccion__cabecera">
+            <h1 class="seccion__titulo">Tu refugio te espera</h1>
+            <p class="seccion__subtitulo">Ven a disfrutar de un buen café y encuentra tu rincón favorito</p>
+        </div>
+            <div class="visita">
+                <div class="visita__mapa">
+                    <span class="visita__simbolo" aria-hidden="true">⌖</span>
+                    <h2 class="visita__titulo" id="titulo-mapa">Ubicación próximamente</h2>
+                    <p id="texto-mapa">Aquí encontrarás la ubicación para llegar a nuestro refugio.</p>
+                </div>
+                <section aria-labelledby="titulo-visita">
+                    <h2 class="visita__titulo" id="titulo-visita">Encuentra tu refugio</h2>
+                    <p class="visita__etiqueta">Dirección</p>
+                    <p class="visita__texto" id="direccion">Ubicación por confirmar</p>
+                    <p class="visita__etiqueta">Horarios de atención</p>
+                    <p class="visita__texto">Lunes a viernes: 08:00 – 21:00</p>
+                    <p class="visita__texto">Sábados: 09:00 – 22:00</p>
+                    <p class="visita__texto">Domingos: 09:00 – 18:00</p>
+                    <p class="visita__nota">Horarios de referencia del diseño, pendientes de confirmación.</p>
+                    <a class="boton visita__boton" id="enlace-mapa" target="_blank" rel="noopener noreferrer" hidden>Abrir en Google Maps</a>
+                    <p class="visita__nota" id="mapa-pendiente">El enlace al mapa estará disponible cuando confirmemos la dirección.</p>
+                    <a class="boton boton--secundario visita__boton" href="contacto.html">Contáctanos</a>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
+        </div>
+    </footer>
+</body>
+</html>

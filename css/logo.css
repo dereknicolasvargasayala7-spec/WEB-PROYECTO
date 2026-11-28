@@ -4,23 +4,23 @@
     flex-shrink: 0;
     font-family: var(--fuente-titulos);
     font-weight: bold;
+    line-height: 1.25;
 }
-
 .logo__nombre {
     color: var(--color-verde);
     font-size: 24px;
-    line-height: 1.2;
 }
-
 .logo__descripcion {
     margin-top: 4px;
     color: var(--color-marron);
-    font-size: 14px;
-    letter-spacing: 1.5px;
+    font-size: 17px;
     text-transform: uppercase;
 }
-
-@media (max-width: 480px) {
-    .logo { text-align: center; }
-    .logo__nombre { font-size: 22px; }
+@media (max-width: 600px) {
+    .logo__nombre {
+        font-size: 19px;
+    }
+    .logo__descripcion {
+        font-size: 13px;
+    }
 }

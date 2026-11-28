@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Dulces del castillo | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+    <script src="js/catalogo.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+        <div class="contenedor header__contenido">
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
+            </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="menu.html" aria-current="page">Menú</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html">Visítanos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor seccion catalogo">
+        <div class="seccion__cabecera">
+            <h1 class="seccion__titulo">Dulces del castillo</h1>
+            <p class="seccion__subtitulo">Pasteles, brownies y pequeños antojos para endulzar tu pausa.</p>
+        </div>
+            <nav class="catalogo__categorias" aria-label="Categorías del menú">
+                <a class="catalogo__categoria" href="bebidas-calientes.html">Calientes</a>
+                <a class="catalogo__categoria" href="bebidas-frias.html">Frías</a>
+                <a class="catalogo__categoria catalogo__categoria--activa" href="dulces.html" aria-current="page">Dulces</a>
+                <a class="catalogo__categoria" href="salados.html">Salados</a>
+            </nav>
+            <section class="catalogo" aria-label="Lista de productos">
+                <div class="catalogo__herramientas" hidden>
+                    <div class="catalogo__campo">
+                        <label class="catalogo__etiqueta" for="buscar">Buscar en esta categoría</label>
+                        <input class="catalogo__entrada" id="buscar" type="search" placeholder="Escribe el nombre de un producto" maxlength="80">
+                    </div>
+                    <div class="catalogo__campo">
+                        <label class="catalogo__etiqueta" for="ordenar">Ordenar productos</label>
+                        <select class="catalogo__entrada" id="ordenar">
+                            <option value="original">Orden del menú</option>
+                            <option value="menor">Menor precio</option>
+                            <option value="mayor">Mayor precio</option>
+                            <option value="nombre">Nombre: A–Z</option>
+                        </select>
+                    </div>
+                    <label class="catalogo__seleccion">
+                        <input class="catalogo__casilla" id="solo-favoritos" type="checkbox">
+                        Solo favoritos
+                    </label>
+                </div>
+                <p class="catalogo__estado" id="estado-catalogo" role="status"></p>
+                <div class="seccion__rejilla" id="lista-productos">
+                <article class="tarjeta" data-producto="pastel-chocolate" data-nombre="Pastel de chocolate" data-precio="22">
+                    <img class="tarjeta__imagen" src="img/pastel-chocolate.jpg" alt="Pastel de chocolate servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Pastel de chocolate</h2>
+                            <span class="tarjeta__precio">Bs 22</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Bizcocho de chocolate con una cobertura suave y deliciosa.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Pastel de chocolate en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                <article class="tarjeta" data-producto="cheesecake" data-nombre="Cheesecake de fresa" data-precio="24">
+                    <img class="tarjeta__imagen" src="img/cheesecake.jpg" alt="Cheesecake de fresa servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Cheesecake de fresa</h2>
+                            <span class="tarjeta__precio">Bs 24</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Tarta cremosa de queso con fresas y base de galleta.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Cheesecake de fresa en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                <article class="tarjeta" data-producto="brownie" data-nombre="Brownie" data-precio="16">
+                    <img class="tarjeta__imagen" src="img/brownie.jpg" alt="Brownie servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Brownie</h2>
+                            <span class="tarjeta__precio">Bs 16</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Chocolate intenso, centro suave y un toque crujiente.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Brownie en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                <article class="tarjeta" data-producto="pastel-zanahoria" data-nombre="Pastel de zanahoria" data-precio="20">
+                    <img class="tarjeta__imagen" src="img/pastel-zanahoria.jpg" alt="Pastel de zanahoria servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Pastel de zanahoria</h2>
+                            <span class="tarjeta__precio">Bs 20</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Bizcocho de zanahoria con crema y nueces.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Pastel de zanahoria en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                <article class="tarjeta" data-producto="galletas" data-nombre="Galletas de chocolate" data-precio="12">
+                    <img class="tarjeta__imagen" src="img/galletas.jpg" alt="Galletas de chocolate servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Galletas de chocolate</h2>
+                            <span class="tarjeta__precio">Bs 12</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Galletas recién horneadas con trocitos de chocolate.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Galletas de chocolate en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                <article class="tarjeta" data-producto="croissant-chocolate" data-nombre="Croissant de chocolate" data-precio="15">
+                    <img class="tarjeta__imagen" src="img/croissant-chocolate.jpg" alt="Croissant de chocolate servido en la cafetería" width="960" height="640" loading="lazy">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__cabecera">
+                            <h2 class="tarjeta__titulo">Croissant de chocolate</h2>
+                            <span class="tarjeta__precio">Bs 15</span>
+                        </div>
+                        <p class="tarjeta__descripcion">Hojaldre dorado con un toque de chocolate.</p>
+                        <button class="tarjeta__favorito" type="button" aria-pressed="false" aria-label="Guardar Croissant de chocolate en favoritos" hidden>♡ Guardar favorito</button>
+                    </div>
+                </article>
+                </div>
+                <p class="catalogo__vacio" id="sin-resultados" hidden>No encontramos productos. Prueba otro nombre o desmarca «Solo favoritos».</p>
+                <p class="catalogo__estado" id="estado-favoritos" role="status"></p>
+                <noscript>Activa JavaScript para buscar, ordenar y guardar favoritos. Puedes consultar todos los productos aquí.</noscript>
+            </section>
+            <p class="seccion__nota">Precios referenciales en bolivianos para este proyecto académico.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
+        </div>
+    </footer>
+</body>
+</html>

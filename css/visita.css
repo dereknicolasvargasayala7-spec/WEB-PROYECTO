@@ -1,0 +1,50 @@
+.visita {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 72px;
+}
+.visita__mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 420px;
+    padding: 32px;
+    background: var(--color-superficie);
+    border-radius: var(--radio-tarjeta);
+    text-align: center;
+}
+.visita__simbolo {
+    color: var(--color-dorado);
+    font-family: var(--fuente-titulos);
+    font-size: 64px;
+}
+.visita__titulo {
+    font-size: 30px;
+}
+.visita__etiqueta {
+    margin-top: 28px;
+    color: var(--color-verde);
+    font-weight: bold;
+}
+.visita__texto {
+    margin-top: 8px;
+}
+.visita__nota {
+    margin-top: 12px;
+    font-size: 13px;
+}
+.visita__boton {
+    margin-top: 28px;
+}
+@media (max-width: 850px) {
+    .visita {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .visita__mapa {
+        min-height: 300px;
+    }
+}

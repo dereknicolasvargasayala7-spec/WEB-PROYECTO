@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El Refugio del Reino: café, repostería y un rincón para compartir historias.">
+    <title>Menú | El Refugio del Reino</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/configuracion.js" defer></script>
+    <script src="js/navegacion.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+        <div class="contenedor header__contenido">
+            <a class="logo" href="index.html" aria-label="El Refugio del Reino, inicio">
+                <span class="logo__nombre">El Refugio del Reino</span>
+                <span class="logo__descripcion">Café y repostería.</span>
+            </a>
+            <button class="header__control" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+                <span aria-hidden="true">☰</span>
+                <span>Menú</span>
+            </button>
+            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="menu.html" aria-current="page">Menú</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="boton navegacion__visita" href="visitanos.html">Visítanos</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="contenido" tabindex="-1">
+        <div class="contenedor seccion">
+        <div class="seccion__cabecera">
+            <h1 class="seccion__titulo">Nuestro menú</h1>
+            <p class="seccion__subtitulo">Elige tu próximo antojo: un café, algo fresco, un dulce o un bocado salado.</p>
+        </div>
+            <div class="seccion__rejilla seccion__rejilla--categorias">
+                <article class="tarjeta">
+                    <a href="bebidas-calientes.html" tabindex="-1" aria-hidden="true">
+                        <img class="tarjeta__imagen" src="img/categoria-calientes.jpg" alt="" width="960" height="640" loading="lazy">
+                    </a>
+                    <div class="tarjeta__contenido">
+                        <h2 class="tarjeta__titulo">Bebidas calientes</h2>
+                        <p class="tarjeta__descripcion">Cafés, chocolates e infusiones para tu pausa.</p>
+                        <a class="tarjeta__enlace" href="bebidas-calientes.html">Explorar calientes →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <a href="bebidas-frias.html" tabindex="-1" aria-hidden="true">
+                        <img class="tarjeta__imagen" src="img/categoria-frias.jpg" alt="" width="960" height="640" loading="lazy">
+                    </a>
+                    <div class="tarjeta__contenido">
+                        <h2 class="tarjeta__titulo">Bebidas frías</h2>
+                        <p class="tarjeta__descripcion">Café frío, frappés y bebidas refrescantes.</p>
+                        <a class="tarjeta__enlace" href="bebidas-frias.html">Explorar frías →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <a href="dulces.html" tabindex="-1" aria-hidden="true">
+                        <img class="tarjeta__imagen" src="img/categoria-dulces.jpg" alt="" width="960" height="640" loading="lazy">
+                    </a>
+                    <div class="tarjeta__contenido">
+                        <h2 class="tarjeta__titulo">Dulces del castillo</h2>
+                        <p class="tarjeta__descripcion">Pasteles, brownies y pequeños antojos para endulzar tu pausa.</p>
+                        <a class="tarjeta__enlace" href="dulces.html">Explorar dulces →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <a href="salados.html" tabindex="-1" aria-hidden="true">
+                        <img class="tarjeta__imagen" src="img/categoria-salados.jpg" alt="" width="960" height="640" loading="lazy">
+                    </a>
+                    <div class="tarjeta__contenido">
+                        <h2 class="tarjeta__titulo">Salados de la posada</h2>
+                        <p class="tarjeta__descripcion">Cuñapés, empanadas y bocados para acompañar tu café.</p>
+                        <a class="tarjeta__enlace" href="salados.html">Explorar salados →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <p class="footer__texto">El Refugio del Reino · Café y repostería</p>
+        </div>
+    </footer>
+</body>
+</html>

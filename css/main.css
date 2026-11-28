@@ -1,5 +1,14 @@
-
-.main {
-    flex: 1;
-    width: 100%;
-}
+@import url("variables.css");
+@import url("base.css");
+@import url("header.css");
+@import url("logo.css");
+@import url("navegacion.css");
+@import url("boton.css");
+@import url("portada.css");
+@import url("seccion.css");
+@import url("tarjeta.css");
+@import url("catalogo.css");
+@import url("historia.css");
+@import url("formulario.css");
+@import url("visita.css");
+@import url("footer.css");
