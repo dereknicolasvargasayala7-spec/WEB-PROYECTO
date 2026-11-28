@@ -1,0 +1,38 @@
+/* Define variables globales disponibles en todo el documento. */
+:root {
+    /* Declara la variable global --color-fondo con el valor #F3E8D2 para reutilizarla en los estilos. */
+    --color-fondo: #F3E8D2;
+    /* Declara la variable global --color-superficie con el valor #E8D8BD para reutilizarla en los estilos. */
+    --color-superficie: #E8D8BD;
+    /* Declara la variable global --color-arena con el valor #CBB795 para reutilizarla en los estilos. */
+    --color-arena: #CBB795;
+    /* Declara la variable global --color-verde con el valor #304638 para reutilizarla en los estilos. */
+    --color-verde: #304638;
+    /* Declara la variable global --color-marron con el valor #4B2413 para reutilizarla en los estilos. */
+    --color-marron: #4B2413;
+    /* Declara la variable global --color-dorado con el valor #A68145 para reutilizarla en los estilos. */
+    --color-dorado: #A68145;
+    /* Declara la variable global --color-blanco con el valor #FFFFFF para reutilizarla en los estilos. */
+    --color-blanco: #FFFFFF;
+    /* Declara la variable global --color-error con el valor #9B2C24 para reutilizarla en los estilos. */
+    --color-error: #9B2C24;
+    /* Declara la variable global --fuente-titulos con el valor Georgia, "Times New Roman", serif para reutilizarla en los estilos. */
+    --fuente-titulos: Georgia, "Times New Roman", serif;
+    /* Declara la variable global --fuente-textos con el valor Arial, Helvetica, sans-serif para reutilizarla en los estilos. */
+    --fuente-textos: Arial, Helvetica, sans-serif;
+    /* Declara la variable global --ancho-contenedor con el valor 1280px para reutilizarla en los estilos. */
+    --ancho-contenedor: 1280px;
+    /* Declara la variable global --radio-boton con el valor 6px para reutilizarla en los estilos. */
+    --radio-boton: 6px;
+    /* Declara la variable global --radio-tarjeta con el valor 16px para reutilizarla en los estilos. */
+    --radio-tarjeta: 16px;
+    /* Declara la variable global --espacio-pequeno con el valor 8px para reutilizarla en los estilos. */
+    --espacio-pequeno: 8px;
+    /* Declara la variable global --espacio-medio con el valor 16px para reutilizarla en los estilos. */
+    --espacio-medio: 16px;
+    /* Declara la variable global --espacio-grande con el valor 32px para reutilizarla en los estilos. */
+    --espacio-grande: 32px;
+    /* Declara la variable global --transicion con el valor 0.2s ease para reutilizarla en los estilos. */
+    --transicion: 0.2s ease;
+/* Cierra las reglas de :root. */
+}

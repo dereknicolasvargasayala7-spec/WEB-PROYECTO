@@ -1,0 +1,178 @@
+/* Abre las reglas para .catalogo__categorias. */
+.catalogo__categorias {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+    justify-content: center;
+    /* Permite o impide que los elementos flexibles pasen a otra fila; valor: wrap. */
+    flex-wrap: wrap;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 16px. */
+    gap: 16px;
+    /* Define el margen inferior; valor: 40px. */
+    margin-bottom: 40px;
+/* Cierra las reglas de .catalogo__categorias. */
+}
+/* Abre las reglas para .catalogo__categoria. */
+.catalogo__categoria {
+    /* Define un ancho mínimo; valor: 150px. */
+    min-width: 150px;
+    /* Establece el espacio entre el contenido y su borde; valor: 10px 24px. */
+    padding: 10px 24px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid transparent. */
+    border: 1px solid transparent;
+    /* Redondea las esquinas; valor: var(--radio-boton). */
+    border-radius: var(--radio-boton);
+    /* Aplica el fondo; valor: var(--color-superficie). */
+    background: var(--color-superficie);
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .catalogo__categoria. */
+}
+/* Abre las reglas para .catalogo__categoria:hover. */
+.catalogo__categoria:hover {
+    /* Cambia el color del borde; valor: var(--color-verde). */
+    border-color: var(--color-verde);
+/* Cierra las reglas de .catalogo__categoria:hover. */
+}
+/* Abre las reglas para .catalogo__categoria--activa. */
+.catalogo__categoria--activa {
+    /* Aplica el fondo; valor: var(--color-verde). */
+    background: var(--color-verde);
+    /* Define el color del texto; valor: var(--color-fondo). */
+    color: var(--color-fondo);
+/* Cierra las reglas de .catalogo__categoria--activa. */
+}
+/* Abre las reglas para .catalogo__herramientas. */
+.catalogo__herramientas {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Permite o impide que los elementos flexibles pasen a otra fila; valor: wrap. */
+    flex-wrap: wrap;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: end. */
+    align-items: end;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 20px. */
+    gap: 20px;
+    /* Define el margen inferior; valor: 20px. */
+    margin-bottom: 20px;
+/* Cierra las reglas de .catalogo__herramientas. */
+}
+/* Abre las reglas para .catalogo__campo. */
+.catalogo__campo {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Controla cuánto espacio ocupa el elemento dentro de un contenedor flexible; valor: 1. */
+    flex: 1;
+    /* Define un ancho mínimo; valor: 200px. */
+    min-width: 200px;
+    /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+    flex-direction: column;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 6px. */
+    gap: 6px;
+/* Cierra las reglas de .catalogo__campo. */
+}
+/* Abre las reglas para .catalogo__etiqueta. */
+.catalogo__etiqueta {
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+/* Cierra las reglas de .catalogo__etiqueta. */
+}
+/* Abre las reglas para .catalogo__entrada. */
+.catalogo__entrada {
+    /* Define el ancho del elemento; valor: 100%. */
+    width: 100%;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 46px. */
+    min-height: 46px;
+    /* Establece el espacio entre el contenido y su borde; valor: 10px 14px. */
+    padding: 10px 14px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid var(--color-dorado). */
+    border: 1px solid var(--color-dorado);
+    /* Redondea las esquinas; valor: var(--radio-boton). */
+    border-radius: var(--radio-boton);
+    /* Define el color del texto; valor: var(--color-marron). */
+    color: var(--color-marron);
+    /* Aplica el fondo; valor: var(--color-fondo). */
+    background: var(--color-fondo);
+/* Cierra las reglas de .catalogo__entrada. */
+}
+/* Abre las reglas para .catalogo__seleccion. */
+.catalogo__seleccion {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 8px. */
+    gap: 8px;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 46px. */
+    min-height: 46px;
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+/* Cierra las reglas de .catalogo__seleccion. */
+}
+/* Abre las reglas para .catalogo__casilla. */
+.catalogo__casilla {
+    /* Define el ancho del elemento; valor: 18px. */
+    width: 18px;
+    /* Define la altura del elemento; valor: 18px. */
+    height: 18px;
+    /* Define el color de los controles nativos como las casillas; valor: var(--color-verde). */
+    accent-color: var(--color-verde);
+/* Cierra las reglas de .catalogo__casilla. */
+}
+/* Abre las reglas para .catalogo__estado. */
+.catalogo__estado {
+    /* Establece los márgenes superior e inferior; valor: 12px 24px. */
+    margin-block: 12px 24px;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+/* Cierra las reglas de .catalogo__estado. */
+}
+/* Abre las reglas para .catalogo__vacio. */
+.catalogo__vacio {
+    /* Establece el espacio entre el contenido y su borde; valor: 40px 24px. */
+    padding: 40px 24px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid var(--color-arena). */
+    border: 1px solid var(--color-arena);
+    /* Redondea las esquinas; valor: var(--radio-tarjeta). */
+    border-radius: var(--radio-tarjeta);
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .catalogo__vacio. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .catalogo__categorias. */
+    .catalogo__categorias {
+        /* Define cómo se distribuye el elemento y su contenido; valor: grid. */
+        display: grid;
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr 1fr. */
+        grid-template-columns: 1fr 1fr;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 10px. */
+        gap: 10px;
+    /* Cierra las reglas de .catalogo__categorias. */
+    }
+    /* Abre las reglas para .catalogo__categoria. */
+    .catalogo__categoria {
+        /* Define un ancho mínimo; valor: 0. */
+        min-width: 0;
+        /* Define el relleno izquierdo y derecho; valor: 14px. */
+        padding-inline: 14px;
+    /* Cierra las reglas de .catalogo__categoria. */
+    }
+    /* Abre las reglas para .catalogo__herramientas. */
+    .catalogo__herramientas {
+        /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+        flex-direction: column;
+        /* Alinea los elementos en el eje transversal del contenedor; valor: stretch. */
+        align-items: stretch;
+    /* Cierra las reglas de .catalogo__herramientas. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

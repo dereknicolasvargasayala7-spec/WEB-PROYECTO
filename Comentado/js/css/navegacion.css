@@ -1,0 +1,84 @@
+/* Abre las reglas para .navegacion. */
+.navegacion {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+    gap: 32px;
+/* Cierra las reglas de .navegacion. */
+}
+/* Abre las reglas para .navegacion__enlace. */
+.navegacion__enlace {
+    /* Define cómo se distribuye el elemento y su contenido; valor: inline-flex. */
+    display: inline-flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 44px. */
+    min-height: 44px;
+    /* Configura el borde inferior del elemento; valor: 2px solid transparent. */
+    border-bottom: 2px solid transparent;
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+    /* Suaviza los cambios de las propiedades indicadas; valor: border-color var(--transicion). */
+    transition: border-color var(--transicion);
+/* Cierra las reglas de .navegacion__enlace. */
+}
+/* Abre las reglas para .navegacion__enlace:hover, .navegacion__enlace--activo. */
+.navegacion__enlace:hover, .navegacion__enlace--activo {
+    /* Cambia el color del borde inferior; valor: var(--color-dorado). */
+    border-bottom-color: var(--color-dorado);
+/* Cierra las reglas de .navegacion__enlace:hover, .navegacion__enlace--activo. */
+}
+/* Abre las reglas para .navegacion__visita. */
+.navegacion__visita {
+    /* Define el margen izquierdo; valor: 48px. */
+    margin-left: 48px;
+/* Cierra las reglas de .navegacion__visita. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 1050px). */
+@media (max-width: 1050px) {
+    /* Abre las reglas para .navegacion. */
+    .navegacion {
+        /* Define el ancho del elemento; valor: 100%. */
+        width: 100%;
+        /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+        justify-content: center;
+        /* Permite o impide que los elementos flexibles pasen a otra fila; valor: wrap. */
+        flex-wrap: wrap;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 16px 28px. */
+        gap: 16px 28px;
+    /* Cierra las reglas de .navegacion. */
+    }
+    /* Abre las reglas para .navegacion__visita. */
+    .navegacion__visita {
+        /* Define el margen izquierdo; valor: 0. */
+        margin-left: 0;
+    /* Cierra las reglas de .navegacion__visita. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .navegacion. */
+    .navegacion {
+        /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+        flex-direction: column;
+        /* Alinea los elementos en el eje transversal del contenedor; valor: stretch. */
+        align-items: stretch;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 8px. */
+        gap: 8px;
+        /* Define el relleno superior; valor: 12px. */
+        padding-top: 12px;
+        /* Configura el borde superior; valor: 1px solid var(--color-arena). */
+        border-top: 1px solid var(--color-arena);
+    /* Cierra las reglas de .navegacion. */
+    }
+    /* Abre las reglas para .navegacion__enlace. */
+    .navegacion__enlace {
+        /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+        justify-content: center;
+    /* Cierra las reglas de .navegacion__enlace. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

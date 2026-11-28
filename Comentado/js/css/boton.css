@@ -1,0 +1,54 @@
+/* Abre las reglas para .boton. */
+.boton {
+    /* Define cómo se distribuye el elemento y su contenido; valor: inline-flex. */
+    display: inline-flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+    justify-content: center;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 44px. */
+    min-height: 44px;
+    /* Establece el espacio entre el contenido y su borde; valor: 10px 28px. */
+    padding: 10px 28px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid var(--color-verde). */
+    border: 1px solid var(--color-verde);
+    /* Redondea las esquinas; valor: var(--radio-boton). */
+    border-radius: var(--radio-boton);
+    /* Aplica el fondo; valor: var(--color-verde). */
+    background: var(--color-verde);
+    /* Define el color del texto; valor: var(--color-fondo). */
+    color: var(--color-fondo);
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+    /* Selecciona la forma del cursor al pasar sobre el control; valor: pointer. */
+    cursor: pointer;
+    /* Suaviza los cambios de las propiedades indicadas; valor: background-color var(--transicion), color var(--transicion). */
+    transition: background-color var(--transicion), color var(--transicion);
+/* Cierra las reglas de .boton. */
+}
+/* Abre las reglas para .boton:hover. */
+.boton:hover {
+    /* Aplica el fondo; valor: var(--color-marron). */
+    background: var(--color-marron);
+    /* Cambia el color del borde; valor: var(--color-marron). */
+    border-color: var(--color-marron);
+/* Cierra las reglas de .boton:hover. */
+}
+/* Abre las reglas para .boton--secundario. */
+.boton--secundario {
+    /* Aplica el fondo; valor: transparent. */
+    background: transparent;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+/* Cierra las reglas de .boton--secundario. */
+}
+/* Abre las reglas para .boton--secundario:hover. */
+.boton--secundario:hover {
+    /* Aplica el fondo; valor: var(--color-verde). */
+    background: var(--color-verde);
+    /* Define el color del texto; valor: var(--color-fondo). */
+    color: var(--color-fondo);
+/* Cierra las reglas de .boton--secundario:hover. */
+}

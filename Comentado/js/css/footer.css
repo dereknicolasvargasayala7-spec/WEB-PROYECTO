@@ -1,0 +1,30 @@
+/* Abre las reglas para .footer. */
+.footer {
+    /* Aplica el fondo; valor: var(--color-verde). */
+    background: var(--color-verde);
+    /* Define el color del texto; valor: var(--color-fondo). */
+    color: var(--color-fondo);
+/* Cierra las reglas de .footer. */
+}
+/* Abre las reglas para .footer__contenido. */
+.footer__contenido {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+    justify-content: center;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 64px. */
+    min-height: 64px;
+    /* Establece el relleno superior e inferior; valor: 20px. */
+    padding-block: 20px;
+/* Cierra las reglas de .footer__contenido. */
+}
+/* Abre las reglas para .footer__texto. */
+.footer__texto {
+    /* Define el tamaño del texto; valor: 12px. */
+    font-size: 12px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .footer__texto. */
+}

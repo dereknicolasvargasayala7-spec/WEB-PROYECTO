@@ -1,0 +1,98 @@
+/* Abre las reglas para .historia. */
+.historia {
+    /* Define cómo se distribuye el elemento y su contenido; valor: grid. */
+    display: grid;
+    /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr 1fr. */
+    grid-template-columns: 1fr 1fr;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 64px. */
+    gap: 64px;
+    /* Define el espacio exterior superior; valor: 72px. */
+    margin-top: 72px;
+/* Cierra las reglas de .historia. */
+}
+/* Abre las reglas para .historia--pagina. */
+.historia--pagina {
+    /* Define el espacio exterior superior; valor: 0. */
+    margin-top: 0;
+/* Cierra las reglas de .historia--pagina. */
+}
+/* Abre las reglas para .historia__imagen. */
+.historia__imagen {
+    /* Define el ancho del elemento; valor: 100%. */
+    width: 100%;
+    /* Mantiene la proporción entre ancho y alto; valor: 4 / 3. */
+    aspect-ratio: 4 / 3;
+    /* Ajusta la imagen a su espacio sin deformarla; cover puede recortar sus bordes; valor: cover. */
+    object-fit: cover;
+    /* Redondea las esquinas; valor: var(--radio-tarjeta). */
+    border-radius: var(--radio-tarjeta);
+/* Cierra las reglas de .historia__imagen. */
+}
+/* Abre las reglas para .historia__titulo. */
+.historia__titulo {
+    /* Define el margen inferior; valor: 24px. */
+    margin-bottom: 24px;
+    /* Define el tamaño del texto; valor: 36px. */
+    font-size: 36px;
+/* Cierra las reglas de .historia__titulo. */
+}
+/* Abre las reglas para .historia__texto. */
+.historia__texto {
+    /* Define el espacio exterior superior; valor: 16px. */
+    margin-top: 16px;
+    /* Limita el ancho máximo del elemento; valor: 510px. */
+    max-width: 510px;
+/* Cierra las reglas de .historia__texto. */
+}
+/* Abre las reglas para .historia__enlace. */
+.historia__enlace {
+    /* Define cómo se distribuye el elemento y su contenido; valor: inline-block. */
+    display: inline-block;
+    /* Define el espacio exterior superior; valor: 24px. */
+    margin-top: 24px;
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Controla el subrayado del texto; valor: underline. */
+    text-decoration: underline;
+    /* Separa el subrayado de las letras; valor: 5px. */
+    text-underline-offset: 5px;
+/* Cierra las reglas de .historia__enlace. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 900px). */
+@media (max-width: 900px) {
+    /* Abre las reglas para .historia. */
+    .historia {
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+        gap: 32px;
+    /* Cierra las reglas de .historia. */
+    }
+    /* Abre las reglas para .historia__titulo. */
+    .historia__titulo {
+        /* Define el tamaño del texto; valor: 30px. */
+        font-size: 30px;
+    /* Cierra las reglas de .historia__titulo. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .historia. */
+    .historia {
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr. */
+        grid-template-columns: 1fr;
+        /* Define el espacio exterior superior; valor: 48px. */
+        margin-top: 48px;
+    /* Cierra las reglas de .historia. */
+    }
+    /* Abre las reglas para .historia--pagina. */
+    .historia--pagina {
+        /* Define el espacio exterior superior; valor: 0. */
+        margin-top: 0;
+    /* Cierra las reglas de .historia--pagina. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

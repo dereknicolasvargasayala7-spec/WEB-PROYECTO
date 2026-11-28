@@ -1,0 +1,28 @@
+/* Importa variables.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("variables.css");
+/* Importa base.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("base.css");
+/* Importa header.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("header.css");
+/* Importa logo.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("logo.css");
+/* Importa navegacion.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("navegacion.css");
+/* Importa boton.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("boton.css");
+/* Importa portada.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("portada.css");
+/* Importa seccion.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("seccion.css");
+/* Importa tarjeta.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("tarjeta.css");
+/* Importa catalogo.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("catalogo.css");
+/* Importa historia.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("historia.css");
+/* Importa formulario.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("formulario.css");
+/* Importa visita.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("visita.css");
+/* Importa footer.css desde esta misma carpeta; el orden respeta variables, base y bloques. */
+@import url("footer.css");

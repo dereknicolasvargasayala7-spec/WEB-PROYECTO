@@ -1,0 +1,62 @@
+/* Abre las reglas para .header. */
+.header {
+    /* Aplica el fondo; valor: var(--color-fondo). */
+    background: var(--color-fondo);
+/* Cierra las reglas de .header. */
+}
+/* Abre las reglas para .header__contenido. */
+.header__contenido {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Distribuye o alinea los elementos sobre el eje principal; valor: space-between. */
+    justify-content: space-between;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+    gap: 32px;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 110px. */
+    min-height: 110px;
+    /* Establece el relleno superior e inferior; valor: 24px. */
+    padding-block: 24px;
+/* Cierra las reglas de .header__contenido. */
+}
+/* Abre las reglas para .header__control. */
+.header__control {
+    /* Define cómo se distribuye el elemento y su contenido; valor: none. */
+    display: none;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 8px. */
+    gap: 8px;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 44px. */
+    min-height: 44px;
+    /* Establece el espacio entre el contenido y su borde; valor: 8px 12px. */
+    padding: 8px 12px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid var(--color-verde). */
+    border: 1px solid var(--color-verde);
+    /* Redondea las esquinas; valor: var(--radio-boton). */
+    border-radius: var(--radio-boton);
+    /* Aplica el fondo; valor: transparent. */
+    background: transparent;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+/* Cierra las reglas de .header__control. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 1050px). */
+@media (max-width: 1050px) {
+    /* Abre las reglas para .header__contenido. */
+    .header__contenido {
+        /* Permite o impide que los elementos flexibles pasen a otra fila; valor: wrap. */
+        flex-wrap: wrap;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 20px. */
+        gap: 20px;
+    /* Cierra las reglas de .header__contenido. */
+    }
+    /* Abre las reglas para .header__control:not([hidden]). */
+    .header__control:not([hidden]) {
+        /* Define cómo se distribuye el elemento y su contenido; valor: inline-flex. */
+        display: inline-flex;
+    /* Cierra las reglas de .header__control:not([hidden]). */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

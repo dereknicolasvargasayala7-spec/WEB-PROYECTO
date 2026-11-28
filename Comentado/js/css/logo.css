@@ -1,0 +1,52 @@
+/* Abre las reglas para .logo. */
+.logo {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+    flex-direction: column;
+    /* Controla si el elemento puede reducirse cuando falta espacio; valor: 0. */
+    flex-shrink: 0;
+    /* Selecciona la familia tipográfica; valor: var(--fuente-titulos). */
+    font-family: var(--fuente-titulos);
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+    /* Define la altura de cada línea de texto; valor: 1.25. */
+    line-height: 1.25;
+/* Cierra las reglas de .logo. */
+}
+/* Abre las reglas para .logo__nombre. */
+.logo__nombre {
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Define el tamaño del texto; valor: 24px. */
+    font-size: 24px;
+/* Cierra las reglas de .logo__nombre. */
+}
+/* Abre las reglas para .logo__descripcion. */
+.logo__descripcion {
+    /* Define el espacio exterior superior; valor: 4px. */
+    margin-top: 4px;
+    /* Define el color del texto; valor: var(--color-marron). */
+    color: var(--color-marron);
+    /* Define el tamaño del texto; valor: 17px. */
+    font-size: 17px;
+    /* Transforma la presentación del texto, por ejemplo a mayúsculas; valor: uppercase. */
+    text-transform: uppercase;
+/* Cierra las reglas de .logo__descripcion. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .logo__nombre. */
+    .logo__nombre {
+        /* Define el tamaño del texto; valor: 19px. */
+        font-size: 19px;
+    /* Cierra las reglas de .logo__nombre. */
+    }
+    /* Abre las reglas para .logo__descripcion. */
+    .logo__descripcion {
+        /* Define el tamaño del texto; valor: 13px. */
+        font-size: 13px;
+    /* Cierra las reglas de .logo__descripcion. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

@@ -1,0 +1,192 @@
+/* Abre las reglas para .contacto. */
+.contacto {
+    /* Define cómo se distribuye el elemento y su contenido; valor: grid. */
+    display: grid;
+    /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1.2fr 0.8fr. */
+    grid-template-columns: 1.2fr 0.8fr;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: start. */
+    align-items: start;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 72px. */
+    gap: 72px;
+/* Cierra las reglas de .contacto. */
+}
+/* Abre las reglas para .contacto__titulo. */
+.contacto__titulo {
+    /* Define el margen inferior; valor: 28px. */
+    margin-bottom: 28px;
+    /* Define el tamaño del texto; valor: 28px. */
+    font-size: 28px;
+/* Cierra las reglas de .contacto__titulo. */
+}
+/* Abre las reglas para .contacto__datos. */
+.contacto__datos {
+    /* Define el relleno superior; valor: 32px. */
+    padding-top: 32px;
+/* Cierra las reglas de .contacto__datos. */
+}
+/* Abre las reglas para .contacto__etiqueta. */
+.contacto__etiqueta {
+    /* Define el espacio exterior superior; valor: 28px. */
+    margin-top: 28px;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+/* Cierra las reglas de .contacto__etiqueta. */
+}
+/* Abre las reglas para .contacto__valor. */
+.contacto__valor {
+    /* Define el espacio exterior superior; valor: 6px. */
+    margin-top: 6px;
+    /* Permite partir textos largos para que no desborden; valor: anywhere. */
+    overflow-wrap: anywhere;
+/* Cierra las reglas de .contacto__valor. */
+}
+/* Abre las reglas para .contacto__enlace. */
+.contacto__enlace {
+    /* Controla el subrayado del texto; valor: underline. */
+    text-decoration: underline;
+    /* Separa el subrayado de las letras; valor: 4px. */
+    text-underline-offset: 4px;
+/* Cierra las reglas de .contacto__enlace. */
+}
+/* Abre las reglas para .contacto__boton. */
+.contacto__boton {
+    /* Define el espacio exterior superior; valor: 36px. */
+    margin-top: 36px;
+/* Cierra las reglas de .contacto__boton. */
+}
+/* Abre las reglas para .formulario. */
+.formulario {
+    /* Establece el espacio entre el contenido y su borde; valor: 36px. */
+    padding: 36px;
+    /* Aplica el fondo; valor: var(--color-superficie). */
+    background: var(--color-superficie);
+    /* Redondea las esquinas; valor: var(--radio-tarjeta). */
+    border-radius: var(--radio-tarjeta);
+/* Cierra las reglas de .formulario. */
+}
+/* Abre las reglas para .formulario__titulo. */
+.formulario__titulo {
+    /* Define el margen inferior; valor: 16px. */
+    margin-bottom: 16px;
+    /* Define el tamaño del texto; valor: 30px. */
+    font-size: 30px;
+/* Cierra las reglas de .formulario__titulo. */
+}
+/* Abre las reglas para .formulario__nota. */
+.formulario__nota {
+    /* Define el margen inferior; valor: 28px. */
+    margin-bottom: 28px;
+    /* Define el tamaño del texto; valor: 14px. */
+    font-size: 14px;
+/* Cierra las reglas de .formulario__nota. */
+}
+/* Abre las reglas para .formulario__campo. */
+.formulario__campo {
+    /* Define el espacio exterior superior; valor: 20px. */
+    margin-top: 20px;
+/* Cierra las reglas de .formulario__campo. */
+}
+/* Abre las reglas para .formulario__etiqueta. */
+.formulario__etiqueta {
+    /* Define cómo se distribuye el elemento y su contenido; valor: block. */
+    display: block;
+    /* Define el margen inferior; valor: 6px. */
+    margin-bottom: 6px;
+    /* Define el tamaño del texto; valor: 15px. */
+    font-size: 15px;
+/* Cierra las reglas de .formulario__etiqueta. */
+}
+/* Abre las reglas para .formulario__entrada. */
+.formulario__entrada {
+    /* Define el ancho del elemento; valor: 100%. */
+    width: 100%;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 48px. */
+    min-height: 48px;
+    /* Establece el espacio entre el contenido y su borde; valor: 12px 16px. */
+    padding: 12px 16px;
+    /* Define el grosor, estilo y color del borde; valor: 1px solid var(--color-dorado). */
+    border: 1px solid var(--color-dorado);
+    /* Redondea las esquinas; valor: var(--radio-boton). */
+    border-radius: var(--radio-boton);
+    /* Aplica el fondo; valor: var(--color-fondo). */
+    background: var(--color-fondo);
+    /* Define el color del texto; valor: var(--color-marron). */
+    color: var(--color-marron);
+/* Cierra las reglas de .formulario__entrada. */
+}
+/* Abre las reglas para .formulario__entrada--mensaje. */
+.formulario__entrada--mensaje {
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 170px. */
+    min-height: 170px;
+    /* Controla en qué dirección se puede redimensionar un campo de texto; valor: vertical. */
+    resize: vertical;
+/* Cierra las reglas de .formulario__entrada--mensaje. */
+}
+/* Abre las reglas para .formulario__entrada[aria-invalid="true"]. */
+.formulario__entrada[aria-invalid="true"] {
+    /* Define el grosor, estilo y color del borde; valor: 2px solid var(--color-error). */
+    border: 2px solid var(--color-error);
+/* Cierra las reglas de .formulario__entrada[aria-invalid="true"]. */
+}
+/* Abre las reglas para .formulario__error. */
+.formulario__error {
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 22px. */
+    min-height: 22px;
+    /* Define el color del texto; valor: var(--color-error). */
+    color: var(--color-error);
+    /* Define el tamaño del texto; valor: 13px. */
+    font-size: 13px;
+/* Cierra las reglas de .formulario__error. */
+}
+/* Abre las reglas para .formulario__acciones. */
+.formulario__acciones {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Permite o impide que los elementos flexibles pasen a otra fila; valor: wrap. */
+    flex-wrap: wrap;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 16px. */
+    gap: 16px;
+    /* Define el espacio exterior superior; valor: 24px. */
+    margin-top: 24px;
+/* Cierra las reglas de .formulario__acciones. */
+}
+/* Abre las reglas para .formulario__estado. */
+.formulario__estado {
+    /* Define el espacio exterior superior; valor: 20px. */
+    margin-top: 20px;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+/* Cierra las reglas de .formulario__estado. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 850px). */
+@media (max-width: 850px) {
+    /* Abre las reglas para .contacto. */
+    .contacto {
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr. */
+        grid-template-columns: 1fr;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+        gap: 32px;
+    /* Cierra las reglas de .contacto. */
+    }
+    /* Abre las reglas para .contacto__datos. */
+    .contacto__datos {
+        /* Define el relleno superior; valor: 0. */
+        padding-top: 0;
+    /* Cierra las reglas de .contacto__datos. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .formulario. */
+    .formulario {
+        /* Establece el espacio entre el contenido y su borde; valor: 24px. */
+        padding: 24px;
+    /* Cierra las reglas de .formulario. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

@@ -1,0 +1,100 @@
+/* Abre las reglas para .visita. */
+.visita {
+    /* Define cómo se distribuye el elemento y su contenido; valor: grid. */
+    display: grid;
+    /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1.2fr 0.8fr. */
+    grid-template-columns: 1.2fr 0.8fr;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 72px. */
+    gap: 72px;
+/* Cierra las reglas de .visita. */
+}
+/* Abre las reglas para .visita__mapa. */
+.visita__mapa {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+    flex-direction: column;
+    /* Distribuye o alinea los elementos sobre el eje principal; valor: center. */
+    justify-content: center;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 20px. */
+    gap: 20px;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 420px. */
+    min-height: 420px;
+    /* Establece el espacio entre el contenido y su borde; valor: 32px. */
+    padding: 32px;
+    /* Aplica el fondo; valor: var(--color-superficie). */
+    background: var(--color-superficie);
+    /* Redondea las esquinas; valor: var(--radio-tarjeta). */
+    border-radius: var(--radio-tarjeta);
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .visita__mapa. */
+}
+/* Abre las reglas para .visita__simbolo. */
+.visita__simbolo {
+    /* Define el color del texto; valor: var(--color-dorado). */
+    color: var(--color-dorado);
+    /* Selecciona la familia tipográfica; valor: var(--fuente-titulos). */
+    font-family: var(--fuente-titulos);
+    /* Define el tamaño del texto; valor: 64px. */
+    font-size: 64px;
+/* Cierra las reglas de .visita__simbolo. */
+}
+/* Abre las reglas para .visita__titulo. */
+.visita__titulo {
+    /* Define el tamaño del texto; valor: 30px. */
+    font-size: 30px;
+/* Cierra las reglas de .visita__titulo. */
+}
+/* Abre las reglas para .visita__etiqueta. */
+.visita__etiqueta {
+    /* Define el espacio exterior superior; valor: 28px. */
+    margin-top: 28px;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Establece el grosor de las letras; valor: bold. */
+    font-weight: bold;
+/* Cierra las reglas de .visita__etiqueta. */
+}
+/* Abre las reglas para .visita__texto. */
+.visita__texto {
+    /* Define el espacio exterior superior; valor: 8px. */
+    margin-top: 8px;
+/* Cierra las reglas de .visita__texto. */
+}
+/* Abre las reglas para .visita__nota. */
+.visita__nota {
+    /* Define el espacio exterior superior; valor: 12px. */
+    margin-top: 12px;
+    /* Define el tamaño del texto; valor: 13px. */
+    font-size: 13px;
+/* Cierra las reglas de .visita__nota. */
+}
+/* Abre las reglas para .visita__boton. */
+.visita__boton {
+    /* Define el espacio exterior superior; valor: 28px. */
+    margin-top: 28px;
+/* Cierra las reglas de .visita__boton. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 850px). */
+@media (max-width: 850px) {
+    /* Abre las reglas para .visita. */
+    .visita {
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr. */
+        grid-template-columns: 1fr;
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+        gap: 32px;
+    /* Cierra las reglas de .visita. */
+    }
+    /* Abre las reglas para .visita__mapa. */
+    .visita__mapa {
+        /* Establece una altura mínima sin impedir que el contenido crezca; valor: 300px. */
+        min-height: 300px;
+    /* Cierra las reglas de .visita__mapa. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

@@ -1,0 +1,156 @@
+/* Abre las reglas para .seccion--espaciada. */
+.seccion--espaciada {
+    /* Define el espacio exterior superior; valor: 56px. */
+    margin-top: 56px;
+/* Cierra las reglas de .seccion--espaciada. */
+}
+/* Abre las reglas para .seccion__cabecera. */
+.seccion__cabecera {
+    /* Establece el relleno superior e inferior; valor: 40px 48px. */
+    padding-block: 40px 48px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .seccion__cabecera. */
+}
+/* Abre las reglas para .seccion__titulo. */
+.seccion__titulo {
+    /* Define el tamaño del texto; valor: clamp(34px, 3.5vw, 48px). */
+    font-size: clamp(34px, 3.5vw, 48px);
+/* Cierra las reglas de .seccion__titulo. */
+}
+/* Abre las reglas para .seccion__subtitulo. */
+.seccion__subtitulo {
+    /* Limita el ancho máximo del elemento; valor: 850px. */
+    max-width: 850px;
+    /* Establece el espacio exterior del elemento; valor: 20px auto 0. */
+    margin: 20px auto 0;
+    /* Selecciona la familia tipográfica; valor: var(--fuente-titulos). */
+    font-family: var(--fuente-titulos);
+    /* Define el tamaño del texto; valor: 23px. */
+    font-size: 23px;
+    /* Define la altura de cada línea de texto; valor: 1.4. */
+    line-height: 1.4;
+/* Cierra las reglas de .seccion__subtitulo. */
+}
+/* Abre las reglas para .seccion__adorno. */
+.seccion__adorno {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Alinea los elementos en el eje transversal del contenedor; valor: center. */
+    align-items: center;
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+    gap: 32px;
+    /* Define el margen inferior; valor: 32px. */
+    margin-bottom: 32px;
+    /* Define el tamaño del texto; valor: 36px. */
+    font-size: 36px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .seccion__adorno. */
+}
+/* Abre las reglas para .seccion__adorno::before, .seccion__adorno::after. */
+.seccion__adorno::before, .seccion__adorno::after {
+    /* Crea el contenido de un pseudoelemento; una cadena vacía permite dibujar una línea decorativa; valor: "". */
+    content: "";
+    /* Controla cuánto espacio ocupa el elemento dentro de un contenedor flexible; valor: 1. */
+    flex: 1;
+    /* Define la altura del elemento; valor: 1px. */
+    height: 1px;
+    /* Aplica el fondo; valor: var(--color-dorado). */
+    background: var(--color-dorado);
+/* Cierra las reglas de .seccion__adorno::before, .seccion__adorno::after. */
+}
+/* Abre las reglas para .seccion__rejilla. */
+.seccion__rejilla {
+    /* Define cómo se distribuye el elemento y su contenido; valor: grid. */
+    display: grid;
+    /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: repeat(3, minmax(0, 1fr)). */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* Define la separación entre elementos sin añadir margen a los extremos; valor: 32px. */
+    gap: 32px;
+/* Cierra las reglas de .seccion__rejilla. */
+}
+/* Abre las reglas para .seccion__rejilla--categorias. */
+.seccion__rejilla--categorias {
+    /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: repeat(2, minmax(0, 1fr)). */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+/* Cierra las reglas de .seccion__rejilla--categorias. */
+}
+/* Abre las reglas para .seccion__nota. */
+.seccion__nota {
+    /* Define el espacio exterior superior; valor: 24px. */
+    margin-top: 24px;
+    /* Define el tamaño del texto; valor: 13px. */
+    font-size: 13px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .seccion__nota. */
+}
+/* Abre las reglas para .seccion__cta. */
+.seccion__cta {
+    /* Define el espacio exterior superior; valor: 64px. */
+    margin-top: 64px;
+    /* Alinea el texto dentro del elemento; valor: center. */
+    text-align: center;
+/* Cierra las reglas de .seccion__cta. */
+}
+/* Abre las reglas para .seccion__invitacion. */
+.seccion__invitacion {
+    /* Define el margen inferior; valor: 24px. */
+    margin-bottom: 24px;
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Selecciona la familia tipográfica; valor: var(--fuente-titulos). */
+    font-family: var(--fuente-titulos);
+    /* Define el tamaño del texto; valor: 28px. */
+    font-size: 28px;
+/* Cierra las reglas de .seccion__invitacion. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 1000px). */
+@media (max-width: 1000px) {
+    /* Abre las reglas para .seccion__rejilla. */
+    .seccion__rejilla {
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: repeat(2, minmax(0, 1fr)). */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 24px. */
+        gap: 24px;
+    /* Cierra las reglas de .seccion__rejilla. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .seccion--espaciada. */
+    .seccion--espaciada {
+        /* Define el espacio exterior superior; valor: 40px. */
+        margin-top: 40px;
+    /* Cierra las reglas de .seccion--espaciada. */
+    }
+    /* Abre las reglas para .seccion__cabecera. */
+    .seccion__cabecera {
+        /* Establece el relleno superior e inferior; valor: 24px 32px. */
+        padding-block: 24px 32px;
+    /* Cierra las reglas de .seccion__cabecera. */
+    }
+    /* Abre las reglas para .seccion__subtitulo. */
+    .seccion__subtitulo {
+        /* Define el tamaño del texto; valor: 20px. */
+        font-size: 20px;
+    /* Cierra las reglas de .seccion__subtitulo. */
+    }
+    /* Abre las reglas para .seccion__rejilla. */
+    .seccion__rejilla {
+        /* Define la cantidad y el tamaño de las columnas de la cuadrícula; valor: 1fr. */
+        grid-template-columns: 1fr;
+    /* Cierra las reglas de .seccion__rejilla. */
+    }
+    /* Abre las reglas para .seccion__adorno. */
+    .seccion__adorno {
+        /* Define la separación entre elementos sin añadir margen a los extremos; valor: 12px. */
+        gap: 12px;
+        /* Define el tamaño del texto; valor: 28px. */
+        font-size: 28px;
+    /* Cierra las reglas de .seccion__adorno. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}

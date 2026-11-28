@@ -1,0 +1,152 @@
+/* Abre las reglas para *. */
+* {
+    /* Incluye el relleno y el borde dentro del ancho y alto declarados; valor: border-box. */
+    box-sizing: border-box;
+    /* Establece el espacio exterior del elemento; valor: 0. */
+    margin: 0;
+    /* Establece el espacio entre el contenido y su borde; valor: 0. */
+    padding: 0;
+/* Cierra las reglas de *. */
+}
+/* Abre las reglas para body. */
+body {
+    /* Define cómo se distribuye el elemento y su contenido; valor: flex. */
+    display: flex;
+    /* Indica si los elementos flexibles se colocan en fila o columna; valor: column. */
+    flex-direction: column;
+    /* Establece una altura mínima sin impedir que el contenido crezca; valor: 100vh. */
+    min-height: 100vh;
+    /* Aplica el color de fondo; valor: var(--color-fondo). */
+    background-color: var(--color-fondo);
+    /* Define el color del texto; valor: var(--color-marron). */
+    color: var(--color-marron);
+    /* Selecciona la familia tipográfica; valor: var(--fuente-textos). */
+    font-family: var(--fuente-textos);
+    /* Define el tamaño del texto; valor: 16px. */
+    font-size: 16px;
+    /* Define la altura de cada línea de texto; valor: 1.6. */
+    line-height: 1.6;
+/* Cierra las reglas de body. */
+}
+/* Abre las reglas para h1, h2, h3. */
+h1, h2, h3 {
+    /* Define el color del texto; valor: var(--color-verde). */
+    color: var(--color-verde);
+    /* Selecciona la familia tipográfica; valor: var(--fuente-titulos). */
+    font-family: var(--fuente-titulos);
+    /* Define la altura de cada línea de texto; valor: 1.15. */
+    line-height: 1.15;
+    /* Equilibra las líneas del título para mejorar su lectura; valor: balance. */
+    text-wrap: balance;
+/* Cierra las reglas de h1, h2, h3. */
+}
+/* Abre las reglas para a. */
+a {
+    /* Define el color del texto; valor: inherit. */
+    color: inherit;
+    /* Controla el subrayado del texto; valor: none. */
+    text-decoration: none;
+/* Cierra las reglas de a. */
+}
+/* Abre las reglas para img. */
+img {
+    /* Define cómo se distribuye el elemento y su contenido; valor: block. */
+    display: block;
+    /* Limita el ancho máximo del elemento; valor: 100%. */
+    max-width: 100%;
+    /* Define la altura del elemento; valor: auto. */
+    height: auto;
+/* Cierra las reglas de img. */
+}
+/* Abre las reglas para button, input, textarea, select. */
+button, input, textarea, select {
+    /* Hace que el control use la tipografía indicada; valor: inherit. */
+    font: inherit;
+/* Cierra las reglas de button, input, textarea, select. */
+}
+/* Abre las reglas para button, select. */
+button, select {
+    /* Selecciona la forma del cursor al pasar sobre el control; valor: pointer. */
+    cursor: pointer;
+/* Cierra las reglas de button, select. */
+}
+/* Abre las reglas para a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible. */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    /* Dibuja el contorno visible para la navegación con teclado; valor: 3px solid var(--color-verde). */
+    outline: 3px solid var(--color-verde);
+    /* Separa el contorno del borde del elemento; valor: 4px. */
+    outline-offset: 4px;
+/* Cierra las reglas de a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible. */
+}
+/* Abre las reglas para [hidden]. */
+[hidden] {
+    /* Define cómo se distribuye el elemento y su contenido; valor: none !important. */
+    display: none !important;
+/* Cierra las reglas de [hidden]. */
+}
+/* Abre las reglas para .main. */
+.main {
+    /* Controla cuánto espacio ocupa el elemento dentro de un contenedor flexible; valor: 1. */
+    flex: 1;
+    /* Define el espacio interior inferior; valor: 88px. */
+    padding-bottom: 88px;
+/* Cierra las reglas de .main. */
+}
+/* Abre las reglas para .contenedor. */
+.contenedor {
+    /* Define el ancho del elemento; valor: min(var(--ancho-contenedor), calc(100% - 96px)). */
+    width: min(var(--ancho-contenedor), calc(100% - 96px));
+    /* Establece los márgenes horizontales; auto permite centrar el contenedor; valor: auto. */
+    margin-inline: auto;
+/* Cierra las reglas de .contenedor. */
+}
+/* Abre las reglas para .salto. */
+.salto {
+    /* Define la forma de posicionar el elemento; valor: absolute. */
+    position: absolute;
+    /* Define la distancia al borde superior; valor: -100px. */
+    top: -100px;
+    /* Define la distancia al borde izquierdo; valor: 16px. */
+    left: 16px;
+    /* Controla el orden de superposición de los elementos posicionados; valor: 20. */
+    z-index: 20;
+    /* Establece el espacio entre el contenido y su borde; valor: 12px 20px. */
+    padding: 12px 20px;
+    /* Aplica el fondo; valor: var(--color-verde). */
+    background: var(--color-verde);
+    /* Define el color del texto; valor: var(--color-fondo). */
+    color: var(--color-fondo);
+/* Cierra las reglas de .salto. */
+}
+/* Abre las reglas para .salto:focus. */
+.salto:focus {
+    /* Define la distancia al borde superior; valor: 12px. */
+    top: 12px;
+/* Cierra las reglas de .salto:focus. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 1024px). */
+@media (max-width: 1024px) {
+    /* Abre las reglas para .contenedor. */
+    .contenedor {
+        /* Define el ancho del elemento; valor: calc(100% - 64px). */
+        width: calc(100% - 64px);
+    /* Cierra las reglas de .contenedor. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
+/* Aplica las reglas siguientes únicamente cuando se cumple (max-width: 600px). */
+@media (max-width: 600px) {
+    /* Abre las reglas para .contenedor. */
+    .contenedor {
+        /* Define el ancho del elemento; valor: calc(100% - 40px). */
+        width: calc(100% - 40px);
+    /* Cierra las reglas de .contenedor. */
+    }
+    /* Abre las reglas para .main. */
+    .main {
+        /* Define el espacio interior inferior; valor: 56px. */
+        padding-bottom: 56px;
+    /* Cierra las reglas de .main. */
+    }
+/* Cierra las reglas de la condición de tamaño de pantalla. */
+}
